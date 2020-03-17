@@ -1,0 +1,21 @@
+#tablemenu{
+    background-color: white;
+    border: #c1c8ec 2px solid;
+    padding: 5px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+#tablemenu td{
+    border: white 1px solid;
+    padding: 5px;
+}
+
+#tablemenu td:hover{
+    border: #c1c8ec 1px solid;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    background-color: #dce2fb;
+    color:gray;
+}
+
