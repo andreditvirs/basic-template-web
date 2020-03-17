@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: arial, sans-serif;
+    background: url('place_here.jpg'); /* Ganti place_here.jpg dengan file/format yang inginkan sebagai background */
+    border-left: 2px solid;
+    border-right: 2px solid;
+}
+
+p {
+    padding: 10px 0px 11px;
+    text-align: justify;
+    line-height: 16px;
+}
+
+#maincontent_2{
+    padding: 12px 0px;
+    width: 600px;
+}
+
+#maincontent_content{
+    padding: 17px 20px;
+    color: #000;
+    background-color: #fff;
+    filter:alpha(opacity=80); /* <-- Ini adalah kunci kenapa bisa transparant*/
+    opacity: .8;              /* <-- dengan menggunakan opacity dan filter */
+    font-family: verdana, arial, sans-serif;
+    font-size: 12px;
+    border: 1px solid;
+}
