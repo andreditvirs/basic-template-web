@@ -19,3 +19,23 @@
     color:gray;
 }
 
+#tablemenu img{
+    border:white 5px solid;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    background-color: white;
+}
+
+#tablemenu h5{
+    margin: 0px;
+    color: gray;
+}
+
+#tablemenu h3{
+    margin: 0px;
+    color:#000000;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    background-color: #dce2fb;
+    padding: 5px;
+}
