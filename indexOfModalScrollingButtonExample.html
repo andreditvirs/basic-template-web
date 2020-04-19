@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .btn-group {
+            z-index: 1051;
+        }
+        .modal-body {
+            height: 300px;
+            overflow: auto
+        }
+    </style>
+</head>
+<body>
+
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+
+    <div class="container">
+    <h3>User Agreement</h3>
+
+        <!-- Button to trigger modal -->
+        <div>
+            <a href="#myModal1" role="button" class="btn" data-toggle="modal">Launch Modal</a>
+        </div>
+
+        <!-- Modal -->
+        <div id="myModal1" class="modal hide" tabindex="-1" role="dialog">
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3>User Agreement</h3>
+            </div>
+            <div class="modal-body">
+
+            <div id="agreement" style="height:1000px;">
+                A very long agreement
+            </div>
+
+            </div>
+            <div class="modal-footer">
+            <button id="closeBtn" class="btn btn-primary" data-dismiss="modal" aria-hidden="true" disabled="">I Accept</button>
+            </div>
+        </div>
+    </div>
+        <script type="text/javascript">
+            $('.modal-body').scroll(function() {
+                var disable = $('#agreement').height() != ($(this).scrollTop() + $(this).height());
+                $('#closeBtn').prop('disabled', disable);
+            });
+        </script>
+    </body>
+</html>
