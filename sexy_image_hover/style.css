@@ -54,4 +54,25 @@
     width: 0%;
 }
 
-#img-
+#img-4:hover .mask{
+    margin-left: 219px;
+    margin-top: 135px;
+    height: 0%;
+    width: 0%;
+}
+
+#img-5:hover .mask{
+    margin-left: 219px;
+    margin-top: 135px;
+    height: 0%;
+    width: 0%;
+    -webkit-transform: rotateX(360deg);
+}
+
+#img-6:hover .mask{
+    margin-left: 219px;
+    margin-top: 135px;
+    height: 0%;
+    width: 0%;
+    -webkit-transform: rotateZ(750deg);
+}
