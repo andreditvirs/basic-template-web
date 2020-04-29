@@ -26,3 +26,29 @@
     echo "$waktu";
 ?>
 
+<!-- 3. date_default_timezone_set('zona daerah')
+    digunakan untuk menentukan/menerapkan zona waktu. Berdasarkan daerah dimana Anda tinggal -->
+
+<?php
+    echo (date_default_timezone_set("Asia/Jakarta"));
+?>
+
+<!-- 4. getdate(timestamp)
+    digunakan untuk memperoleh informasi mengenai tanggal dan waktu saat ini dalam bentuk array 
+    yang dimaksud timestamp adalah : 
+    [hours]     = jam
+    [minutes]   = menit
+    [seconds]   = detik
+    [mday]      = hari dalam satu bulan
+    [wday]      = hari dalam satu minggu
+    [year]      = tahun
+    [yday]      = hari dalam satu tahun[weekday] ("Sunday, Monday, ...")
+    [month]     = nama bulan dalam satu tahun ("January", ... )-->
+
+<?php
+    $tgl = getdate();
+    print("$tgl[weekday], $tgl[mday], $tgl[month], $tgl[year]");
+
+?>
+
+<!-- 
