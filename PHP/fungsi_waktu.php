@@ -51,4 +51,27 @@
 
 ?>
 
-<!-- 
+<!-- 5. idate(format ,timestamp)
+    digunakan untuk men-set waktu dan tanggal lokal ke dalam bentuk integer (bilangan bulat) sehingga tanggal
+    yang mengandung format string, tidak akan ditampilkan -->
+
+<?php
+    $idate = idate("Y");
+    echo "$idate";
+?>
+
+<!-- 6. strtotime(time, now)
+    digunakan untuk merubah tipe string menjadi format penanggalan / waktu -->
+
+<?php
+    $date = date('F-d-Y', strtotime('3-9-2009'));
+    echo "$date";
+?>
+
+<?php
+    $sekarang = date("d-m-Y");
+    $besok = date('d-m-Y', strtotime('-34 day'));
+    echo "$besok";
+?>
+
+
