@@ -21,3 +21,47 @@
 <?php
     fclose($file)
 ?>
+
+<!-- fgets(var file)
+    digunakan untuk membuka baris per baris file yang dibuka -->
+
+<?php
+    echo fgets($file);
+?>
+
+<!-- feof(file)
+    digunakan untuk memeriksa akhiran dari suatu file -->
+
+<?php
+    while(!feof($file)){
+        echo fgets($file). "<br>";
+    }
+?>
+
+<!-- fgetc(var file)
+    digunakan untuk membaca karakter per karakter file yang dibuka -->
+
+<?php
+    echo fgetc($file);
+?>
+
+<!-- file_exists(path)
+    digunakan untuk mengecek/memeriksa ada atau tidaknya sebuah file -->
+
+<?php
+    $file = "file/file.txt";
+    if(file_exists($file)){
+        echo "Ada file nya";
+    }else{
+        echo "Filenya tidak ada";
+    }
+?>
+
+<!-- fputs(var file, tulisan baru)
+    digunakan untuk menuliskan/menambahkan teks pada file
+    yang dibuka. Disamping fputs ada perintah dengan fungsi
+    yang sama yakni fwrite() -->
+
+<?php
+    fputs($file, "Tulisan baru");
+?>
