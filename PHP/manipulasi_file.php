@@ -65,3 +65,25 @@
 <?php
     fputs($file, "Tulisan baru");
 ?>
+
+<!-- file(path)
+    digunakan untuk membaca file kemudian memasukkannya ke dalam
+    bentuk array -->
+
+<?php
+    print_r(file("file.txt")); // Hasil outputnya array([0] => Tulisan baru)
+?>
+
+<!-- fstat(var file)
+    digunakan untuk mengetahui informasi dari sebuah file -->
+
+<?php
+    print_r(fstat($file));
+?>
+
+<!-- fread(var file, panjang)
+    digunakan untuk mengetahui informasi dari sebuah file -->
+
+<?php
+    fread($file, "10");
+?>
