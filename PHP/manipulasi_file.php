@@ -87,3 +87,48 @@
 <?php
     fread($file, "10");
 ?>
+
+<!-- copy(pathAsal, pathTujuan)
+    digunakan untuk mengcopy sebuah file menjadi file lain -->
+<?php
+    echo copy("file1.txt", "file2.txt");
+?>
+
+<!-- unlink(var file)
+    digunakan untuk menghapus sebuah file -->
+<?php
+    $file = "file.txt";
+    unlink($file);
+?>
+
+<!-- disk_free_space(path)
+    digunakan untuk menampilkan informasi sisa ruang (space)
+    dalam satuan bytes untuk direktori tertentu -->
+<?php
+    echo disk_free_space("C:");
+?>
+
+<!-- is_dir(var file)
+    digunakan untuk memeriksa apakah file tersebut merupakan
+    suatu direktori atau bukan -->
+<?php
+    $file = "gambar";
+    if(is_dir($file)){
+        echo "Direktori File";
+    }else{
+        echo "Bukan Direktori";
+    }
+?>
+
+<!-- mkdir(nama file baru)
+    digunakan untuk membuat direktori -->
+<?php
+    mkdir("file");
+?>
+
+<!-- rename(nama file, nama file baru)
+    digunakan untuk merubah nama suatu file atau direktori -->
+<?php
+    rename("gambar", "file");
+?>
+
