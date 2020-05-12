@@ -9,3 +9,25 @@
 <?php
     mysql_connect("localhost", "root", "123456");
 ?>
+
+<!-- mysql_close()
+    digunakan untuk memutus hubungan dengan
+    database MySQL -->
+<?php
+    mysql_close(connection);
+?>
+
+<!-- mysql_select_db()
+    digunakan untuk memilih database MySQL yang akan digunakan -->
+<?php
+    mysql_select_db("dbasfamedia");
+?>
+
+<!-- mysql_num_rows()
+    digunakan untuk menghitung seluruh data 
+    yang terdapat pada suatu tabel dalam database -->
+<?php
+    mysql_num_rows(mysql_query(
+        "SELECT * FROM tkomentar"
+    ));
+?>
