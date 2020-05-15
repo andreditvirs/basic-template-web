@@ -31,3 +31,12 @@
         "SELECT * FROM tkomentar"
     ));
 ?>
+
+<!-- mysql_affected_rows()
+    digunakan untuk mendapatkan jumlah record
+    yang dihasilkan dari operasi MySQL sebelumnya -->
+<?php
+    mysql_query("DELETE FROM tKomentar WHERE id < 5");
+    $a = mysql_affected_rows();
+    echo "Jumlah record terhapus : $a";
+?>
