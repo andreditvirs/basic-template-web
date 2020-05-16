@@ -40,3 +40,45 @@
     $a = mysql_affected_rows();
     echo "Jumlah record terhapus : $a";
 ?>
+
+<!-- mysql_fetch_array()
+    digunakan untuk mendapatkan data berdasarkan nama field -->
+<?php
+    $sql = mysql_query("SELECT * FROM tKomentar");
+    while ($data = mysql_fetch_array($sql)){
+        echo "$data[id] | $data[nama] | $data[komentar]";
+    }
+?>
+
+<!-- mysql_fetch_row()
+    digunakan untuk mendapatkan data berdasarkan kolom field -->
+<?php
+    $sql = mysql_query("SELECT * FROM tKomentar");
+    while ($data = mysql_fetch_row($sql)){
+        echo "$data[0] | $data[1] | $data[2]";
+    }
+?>
+
+<!-- mysql_fetch_object()
+    digunakan untuk mendapatkan data dan menjadikannya sebagai objek -->
+<?php
+    $sql = mysql_query("SELECT * FROM tKomentar");
+    while ($data = mysql_fetch_object($sql)){
+        echo "$data->id | $data->nama | $data->komentar";
+    }
+?>
+
+<!-- mysql_field_name()
+    digunakan untuk mendapatkan informasi nama field dalam suatu tabel -->
+<?php
+    $sql = mysql_query("SELECT * FROM tKomentar");
+    $data = mysql_field_name($sql, 0);
+    echo $data;
+?>
+
+<!-- mysql_num_fields()
+    digunakan untuk mendapatkan informasi jumlah field pada suatu tabel -->
+<?php
+    $sql = mysql_query("SELECT * FROM tKomentar");
+    echo mysql_num_fields($sql);
+?>
